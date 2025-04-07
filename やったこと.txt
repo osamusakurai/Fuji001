@@ -28,10 +28,32 @@ git push origin main
 第一弾。hellow worldをlocalでのみ
 
 
-
+*********************
+第２弾メッセージの保存
 src/firebase.js新規作成　　//Firebase に接続するコード
 src/components/FormInput.jsx新規作成  //Reactのフォームを用意
 src/components/FormInput.jsx を作って、Reactのフォームを用意
 App.js に組み込む
 Firebase コンソール設定（アプリ作成）
 src/firebase.jsに設定値追記
+firestoreの設定（dbの作成）
+
+*********************
+第３弾ログイン機能追加
+
+src/components/LoginForm.js新規作成
+src/App.jsにログインフォームを表示する
+firebase.jsにimport { getAuth } from 'firebase/auth';追記
+
+*****************************
+第４弾画面切り替わり機能追加
+
+React Router をインストール
+ルーティングを設定　// src/App.jsを編集
+ログイン後に表示するページを作る// src/components/Dashboard.jsを新規作成
+ログイン状態を見てルートを制御する PrivateRoute を作る　// src/components/PrivateRoute.jsを新規作成
+ログイン成功時にトップページにリダイレクト　// src/components/LoginForm.jsを編集
+
+
+
+
