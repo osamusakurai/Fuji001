@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
+import FormInput from "./components/FormInput";
 
 function App() {
   return (
-    <div style={{ textAlign: 'center', marginTop: '50px' }}>
-      <h1>Hello World</h1>
+    <div>
+      <h1>Hello Firebase!</h1>
+      <FormInput />
     </div>
   );
 }

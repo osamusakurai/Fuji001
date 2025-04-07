@@ -1,2 +1,37 @@
 src/App.js
 を編集してHello World表示
+
+
+まとめ：初心者におすすめの流れ
+状況	やること	コマンド
+ファイルを元に戻したい	git restore	git restore .
+直前のコミットに戻したい	git reset	git reset --soft HEAD~1
+とりあえず保存しておきたい	git commit	git commit -m "保存"
+
+
+
+hello-world-app/
+├── src/
+│   ├── firebase.js        ← Firebaseの設定を書く（ここで接続する）
+│   ├── App.js             ← 画面全体（ルーティングやレイアウト）
+│   ├── components/
+│   │   └── FormInput.jsx  ← 入力フォームを作る（例：名前・コメントなど）
+│   └── index.js           ← アプリのエントリポイント
+
+
+git add .
+git commit -m "〇〇の変更"
+git push origin main
+
+
+*********************
+第一弾。hellow worldをlocalでのみ
+
+
+
+src/firebase.js新規作成　　//Firebase に接続するコード
+src/components/FormInput.jsx新規作成  //Reactのフォームを用意
+src/components/FormInput.jsx を作って、Reactのフォームを用意
+App.js に組み込む
+Firebase コンソール設定（アプリ作成）
+src/firebase.jsに設定値追記
